@@ -1,0 +1,106 @@
+<!DOCTYPE html><html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/mon_style.css">
+  <title>Olivera Kelome - Portfolio</title>
+</head>
+<body>
+  <header class="entete">
+    <div id="monTitre"><span>BIENVENU !</span></div>
+    <div>
+      <h1>Bonjour, je suis Olivera Kelome</h1>
+      <p>Développeur Web, Java Full-Stack</p><br><br>
+      <a href="#projets" class="voirProjet">Voir mes projets</a>
+      <a href="#contact" class="voirContact">Me contacter</a>
+    </div>
+    <img src="images/moi2.jpg" alt="Photo de profil" class="photoprofil">
+  </header>
+  <section class="apropos">
+    <h2>Qui suis-je ?</h2>
+    <p>
+      Développeur Java full-stack passionné, je m’appelle Olivera Kelome, et je mets mes compétences 
+      au service de solutions numériques innovantes et durables. Installé en République Démocratique 
+      du Congo, j’ai acquis une solide expérience dans la conception, le développement et le déploiement 
+      d'applications à forte valeur ajoutée, tant pour le secteur public que privé. Fort d’un parcours centré
+      sur les technologies Java (Java SE, JavaFX, Spring Boot…) et les outils web modernes (HTML, CSS, JavaScript),
+      je maîtrise les aspects du développement back-end comme front-end, tout en intégrant des pratiques rigoureuses
+      en matière de sécurité, d’ergonomie et de maintenabilité. Je travaille aussi bien sur des systèmes d’information
+      métier que sur des plateformes orientées citoyen. Au fil des années, j’ai eu l’opportunité de participer à plusieurs
+      projets structurants, notamment dans les domaines de la digitalisation des processus, de l'automatisation et de
+      l’amélioration des services numériques. Parmi mes réalisations les plus marquantes figure Signal-RDC, une application
+      d’e-participation citoyenne que j’ai conçue pour permettre aux citoyens de signaler, en toute simplicité, divers 
+      incidents urbains (pannes, délits, violences domestiques, embouteillages…) via leur smartphone, avec redirection automatique
+      vers les autorités compétentes. Ce projet incarne ma vision d’une technologie inclusive, proche des réalités du terrain, et
+      au service de la gouvernance locale. Je suis convaincu que la technologie ne se limite pas à l’ingénierie : elle est 
+      un vecteur de transformation sociale. C’est pourquoi je continue d’investir dans mon apprentissage, dans l’écoute des 
+      besoins utilisateurs et dans la recherche de solutions qui ont du sens.
+    </p>
+  </section>  
+  <section class="projets" id="projets">
+    <div>
+      <h2>Projets récents</h2>
+      <div class="carteProjet">
+        <div class="carte">
+          <img src="images/acceuilAgent.png" alt="Projet 1">
+          <div>
+            <h5>Outil d'E-participation : Signal - RDC</h5>
+            <p>Un outil numérique complet alliant application desktop et application mobile
+               permettant aux citoyens de Kinshasa de signaler divers incidents en temps réel, 
+               et aux services compétents de recevoir et traiter
+               les incidents relevant de leurs compétences.</p>
+            <a href="#">En savoir plus</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="contacts" id="contact">
+    <h2>Contact</h2>
+    <form action="https://formspree.io/f/movwpgro" method="post" id="contactForm">
+      <input type="text" name="name" placeholder="Nom" required><br>
+      <input type="email" name="email" placeholder="Adresse Email" required><br>
+      <textarea name="message" rows="5" placeholder="Message" required></textarea><br>
+      <button type="submit">Envoyer</button>
+    </form>
+    <!-- Alerte de succès -->
+  <div id="customAlertSuccess" class="alert alert-hidden">
+    <div class="alert-box success">
+      <h2>Succès ✅</h2>
+      <p>Votre message a été envoyé avec succès !</p>
+      <button onclick="closeAlert('customAlertSuccess')">Fermer</button>
+    </div>
+  </div>
+
+  <!-- Alerte d'erreur -->
+  <div id="customAlertError" class="alert alert-hidden">
+    <div class="alert-box error">
+      <h2>Erreur ❌</h2>
+      <p>Échec de l’envoi. Veuillez vérifier votre connexion ou réessayer plus tard.</p>
+      <button onclick="closeAlert('customAlertError')">Fermer</button>
+    </div>
+  </div>
+
+    <div class="mesReseaux">
+      <a href="https://wa.me/message/ASUIBNDDDIQ6G1">
+        <img alt="whatsapp" src="images/whatsapp.png" />
+      </a>
+      <a href="https://www.facebook.com/OliveraKelomeJoseClaude?mibextid=ZbWKwL">
+        <img alt="whatsapp" src="images/facebook.png" />
+      </a>
+      <a href="https://www.instagram.com/kelomeolivera?utm_source=qr&igsh=ZG5rc281azk3amw=">
+        <img alt="whatsapp" src="images/instagram.png" />
+      </a>
+      <a href="https://x.com/OliveraKelome?t=h97nC8gp2pkNit0ceUWVtQ&s=09">
+        <img alt="whatsapp" src="images/x.png" />
+      </a>
+    </div>
+    <script src="js/monjs.js"></script>
+  </section>  
+  <footer>
+    <p>&copy; 2025 Olivera Kelome – Tous droits réservés</p>
+    <p><a href="mailto:contact@oliverakelome.pro">contact@oliverakelome.pro</a></p>
+    <p>Une réalisation <strong>EKIVANCE</strong></p>
+  </footer>
+</body>
+</html>
